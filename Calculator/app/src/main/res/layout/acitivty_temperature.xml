@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="100%">
+
+
+
+        <android.support.percent.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="top"
+            android:orientation="horizontal"
+            app:layout_heightPercent="52%"
+            app:layout_widthPercent="100%">
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="top"
+                android:orientation="horizontal"
+                app:layout_heightPercent="70%"
+                app:layout_widthPercent="100%">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="top"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="15%"
+                    app:layout_widthPercent="100%">
+
+
+                    <android.support.percent.PercentFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="9%">
+
+
+                        <ImageButton
+                            android:id="@+id/tem_btnMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/colorBackgroundFloating"
+                            app:srcCompat="@mipmap/menu" />
+                    </android.support.percent.PercentFrameLayout>
+
+                    <android.support.percent.PercentFrameLayout
+                        android:id="@+id/title_temperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="91%">
+
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="温度转换"
+                            android:textColor="#A9A9A9"
+                            android:textSize="40px"
+                            android:textStyle="bold" />
+                    </android.support.percent.PercentFrameLayout>
+                </android.support.percent.PercentFrameLayout>
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="85%"
+                    app:layout_widthPercent="100%">
+
+                    <TextView
+                        android:id="@+id/tem_tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#F65314"
+                        android:textSize="55px"
+                        android:gravity="right"
+                        android:text=""/>
+
+                </android.support.percent.PercentFrameLayout>
+
+            </android.support.percent.PercentFrameLayout>
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                app:layout_heightPercent="30%"
+                app:layout_widthPercent="100%">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="100%"
+                    app:layout_widthPercent="35%">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:entries="@array/temperature"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true" />
+
+                </android.support.percent.PercentFrameLayout>
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="100%"
+                    app:layout_widthPercent="65%">
+
+                    <TextView
+                        android:id="@+id/tem_tv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="#00BFFF"
+                        android:textSize="80px"
+                        android:textStyle="bold" />
+
+                </android.support.percent.PercentFrameLayout>
+
+
+            </android.support.percent.PercentFrameLayout>
+
+        </android.support.percent.PercentFrameLayout>
+
+        <android.support.percent.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_heightPercent="48%"
+            app:layout_widthPercent="100%">
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="top"
+                android:orientation="horizontal"
+                app:layout_heightPercent="50%"
+                app:layout_widthPercent="100%">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="top"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="50%"
+                    app:layout_widthPercent="100%">
+
+                    <android.support.percent.PercentFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center|left"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="50.8%">
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|left"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                app:srcCompat="@mipmap/i7" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|right"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                app:srcCompat="@mipmap/i8" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                    </android.support.percent.PercentFrameLayout>
+
+                    <android.support.percent.PercentFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center|right"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="50.8%">
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|left"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                android:elevation="0dp"
+                                app:srcCompat="@mipmap/i9" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|right"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_purple"
+                                app:srcCompat="@mipmap/q5" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                    </android.support.percent.PercentFrameLayout>
+
+                </android.support.percent.PercentFrameLayout>
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="50%"
+                    app:layout_widthPercent="100%">
+
+                    <android.support.percent.PercentFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center|left"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="50.8%">
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|left"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn5"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                app:srcCompat="@mipmap/i4" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|right"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn6"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                app:srcCompat="@mipmap/i5" />
+
+                        </android.support.percent.PercentFrameLayout>
+                    </android.support.percent.PercentFrameLayout>
+
+                    <android.support.percent.PercentFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center|right"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="50.8%">
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|left"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn7"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                app:srcCompat="@mipmap/i6" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|right"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn8"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_purple"
+                                app:srcCompat="@mipmap/q3" />
+
+                        </android.support.percent.PercentFrameLayout>
+                    </android.support.percent.PercentFrameLayout>
+                </android.support.percent.PercentFrameLayout>
+            </android.support.percent.PercentFrameLayout>
+
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                app:layout_heightPercent="50%"
+                app:layout_widthPercent="100%">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="top"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="50%"
+                    app:layout_widthPercent="100%">
+
+                    <android.support.percent.PercentFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center|left"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="50.8%">
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|left"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn9"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                app:srcCompat="@mipmap/i1" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|right"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn10"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                app:srcCompat="@mipmap/i2" />
+
+                        </android.support.percent.PercentFrameLayout>
+                    </android.support.percent.PercentFrameLayout>
+
+                    <android.support.percent.PercentFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center|right"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="50.8%">
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|left"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn11"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                app:srcCompat="@mipmap/i3" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|right"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn12"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_purple"
+                                app:srcCompat="@mipmap/q4" />
+
+                        </android.support.percent.PercentFrameLayout>
+                    </android.support.percent.PercentFrameLayout>
+                </android.support.percent.PercentFrameLayout>
+
+
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="50%"
+                    app:layout_widthPercent="100%">
+
+                    <android.support.percent.PercentFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center|left"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="50.8%">
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|left"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn13"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/darker_gray"
+                                app:srcCompat="@mipmap/q17" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|right"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn14"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_blue_light"
+                                app:srcCompat="@mipmap/i0" />
+
+                        </android.support.percent.PercentFrameLayout>
+                    </android.support.percent.PercentFrameLayout>
+
+                    <android.support.percent.PercentFrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center|right"
+                        android:orientation="horizontal"
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="50.8%">
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|left"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn15"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/darker_gray"
+                                app:srcCompat="@mipmap/q7" />
+
+                        </android.support.percent.PercentFrameLayout>
+
+                        <android.support.percent.PercentFrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center|right"
+                            android:orientation="horizontal"
+                            app:layout_heightPercent="114%"
+                            app:layout_widthPercent="51.5%">
+
+                            <ImageButton
+                                android:id="@+id/tem_iBtn16"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:backgroundTint="@android:color/holo_orange_dark"
+                                app:srcCompat="@mipmap/q6" />
+
+                        </android.support.percent.PercentFrameLayout>
+                    </android.support.percent.PercentFrameLayout>
+                </android.support.percent.PercentFrameLayout>
+
+            </android.support.percent.PercentFrameLayout>
+
+
+        </android.support.percent.PercentFrameLayout>
+
+    </android.support.percent.PercentFrameLayout>
+
+
+
+
+</RelativeLayout>
+

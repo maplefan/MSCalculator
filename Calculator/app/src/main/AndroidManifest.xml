@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dxf.calculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoTitleStyle">
+        <activity android:name=".LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:theme="@style/NoTitleStyle"
+            ></activity>
+        <activity android:name=".MenuActivity"
+            android:theme="@style/NoTitleStyle"
+            ></activity>
+        <activity android:name=".Chinese_numberActivity"
+            android:theme="@style/NoTitleStyle"
+            ></activity>
+        <activity android:name=".ProgrammerActivity"
+            android:theme="@style/NoTitleStyle"
+            ></activity>
+        <activity android:name=".TemperatureActivity"
+            android:theme="@style/NoTitleStyle"
+            ></activity>
+
+    </application>
+
+</manifest>

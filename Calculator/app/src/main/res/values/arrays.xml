@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="temperature">
+        <item>摄氏度</item>
+        <item>华氏度</item>
+        <item>开氏度</item>
+        <item>兰氏度</item>
+        <item>列氏度</item>
+    </string-array>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.percent.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="100%">
+
+        <android.support.percent.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="top"
+            android:orientation="horizontal"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="100%">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#00BFFF"
+                android:textSize="70px"
+                android:textStyle="bold"
+                android:text="年轻人，你渴望力量吗？加个群吧！" />
+        </android.support.percent.PercentFrameLayout>
+
+        <android.support.percent.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            app:layout_heightPercent="60%"
+            app:layout_widthPercent="100%">
+
+            <ImageView
+                android:id="@+id/pro_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/me" />
+        </android.support.percent.PercentFrameLayout>
+
+        <android.support.percent.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="100%">
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="top"
+                android:orientation="horizontal"
+                app:layout_heightPercent="20%"
+                app:layout_widthPercent="100%">
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#7CBB00"
+                    android:text="C C++ Java C# Python Go Basic PHP Ruby Objective-c" />
+            </android.support.percent.PercentFrameLayout>
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                app:layout_heightPercent="60%"
+                app:layout_widthPercent="100%">
+
+                <Button
+                    android:id="@+id/pro_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="点击加群" />
+            </android.support.percent.PercentFrameLayout>
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                app:layout_heightPercent="20%"
+                app:layout_widthPercent="100%">
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#F65314"
+                    android:text="JavaScript SQL VB ASCII html Kotlin Pascal XML Fortran" />
+            </android.support.percent.PercentFrameLayout>
+        </android.support.percent.PercentFrameLayout>
+
+
+
+    </android.support.percent.PercentFrameLayout>
+
+
+
+
+</RelativeLayout>
+
