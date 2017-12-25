@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     String buf,buffer;
     String bufStr1="",bufStr2="";
     TextView main_tv1,main_tv2;
+    int a,b,c,d,e = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -390,6 +391,29 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 }
                 else if(buf.indexOf(".")==-1)
                 {buf = buf + ".";
+                }
+                else {
+                    e = 0;
+                    a = buf.lastIndexOf("+");
+                    b = buf.lastIndexOf("-");
+                    c = buf.lastIndexOf("*");
+                    d = buf.lastIndexOf("/");
+                    e = a;
+                    if(b>e){
+                        e = b;
+                    }
+                    if(c>e){
+                        e = c;
+                    }
+                    if(d>e){
+                        e = d;
+                    }
+                    try{
+                        if(buf.substring(e).indexOf(".")==-1)
+                        {buf = buf + ".";
+                        }
+                    }catch (Exception e){
+                    }
                 }
                 refresh();
                 break;
